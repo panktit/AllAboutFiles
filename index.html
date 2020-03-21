@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Novelish</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="icon" href="favicon.png" type="image/png">
+</head>
+<body>
+
+<div class="container">
+  <br> <br>
+  <h2 style="color: #d93a16">File Upload using Multer</h2>
+  <br>
+  <div class="row">
+    <div class="col-md-4">
+        <form action="/singleFile" enctype="multipart/form-data" method="POST">
+            <h4 >Single File:</h4>
+            <input type="file"  id="singleFile" name="singleFile" required>
+            <br /><br />
+            <button type="submit" class="btn btn-danger">Upload</button>
+        </form>
+    </div>
+
+    <div class="col-md-offset-1 col-md-4">
+      <form action="/multipleFiles" enctype="multipart/form-data" method="POST">
+          <h4 for="name">Multiple Files:</h4>
+          <input type="file"  id="multipleFiles" name="multipleFiles" multiple required>
+          <br /><br />
+          <button type="submit" class="btn btn-danger">Upload</button>
+      </form>
+    </div>
+
+    <div class="col-md-offset-1 col-md-4">
+      <form action="/imageFile" enctype="multipart/form-data" method="POST">
+          <h4 for="name">Image File:</h4>
+          <input type="file"  id="imageFile" name="imageFile" required>
+          <br /><br />
+          <button type="submit" class="btn btn-danger">Upload</button>
+      </form>
+    </div>
+  </div>
+  <br><br>
+  <a href="./fileOps">Go to File Operations</a>
+</div>
+</body>
+</html>
+
+
+

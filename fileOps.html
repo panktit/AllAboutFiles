@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Novelish</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="icon" href="favicon.png" type="image/png">
+</head>
+<body>
+<div class="container">
+  <br /><br />
+  <div class="row">
+    <div class="col-md-4">
+      <h2 style="color: #d93a16">File Operations</h2>
+      <br />
+      <form action="/file-operation" method="POST">
+        <input type="text"  id="filename" name="filename" placeholder=" File Name" required>
+        <br /><br />
+        <select name="operation" id="operation">
+          <option value="default">Select Operation</option>
+          <option value="checkperm">Check file permissions</option>
+          <option value="checkexist">Check if file exists</option>
+          <option value="linecount">Determine Line Count</option>
+          <option value="readlbl">Read file line by line</option>
+        </select>
+        <br /><br />
+        <button type="submit" class="btn btn-danger">Submit</button>
+      </form><br />
+      <form action="/cliInput" method="GET">
+        <button type="submit" class="btn btn-danger">CLI Input</button>
+        <p><br>( After clicking button, go to command prompt )</p>
+      </form>
+    </div>
+  </div>
+  <br><br>
+  <a href="./">Back to File Upload</a>
+</div>
+</body>
+</html>
